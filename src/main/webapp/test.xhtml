@@ -13,7 +13,30 @@
 
         <h1>#{testView.string}</h1>
         <h:form id="frmTest">
-            
+            <h1>This one doesn't work:</h1>
+            <p:toolbar>
+                <p:toolbarGroup align="right">
+                    <p:commandButton value="Save" />
+                </p:toolbarGroup>
+            </p:toolbar>
+            <h1>This one works:</h1>
+            <p:toolbar>
+                <p:toolbarGroup>
+
+                </p:toolbarGroup>
+                <p:toolbarGroup align="right">
+                    <p:commandButton value="Save" />
+                </p:toolbarGroup>
+            </p:toolbar>
+            <h1>This one also works:</h1>
+            <p:toolbar>
+                <p:toolbarGroup>
+
+                </p:toolbarGroup>
+                <p:toolbarGroup>
+                    <p:commandButton value="Save" />
+                </p:toolbarGroup>
+            </p:toolbar>
         </h:form>
 
     </h:body>
